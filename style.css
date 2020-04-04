@@ -18,6 +18,26 @@ ul{
     padding: 0;
 
 }
+
+/*Fade Animation*/
+
+.transition-fade{
+    opacity: 1;
+    transition: 500ms;
+    transform: translateY(0%);
+    transform-origin: left;
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+    transform: translateY(100%)
+}
+
+html.is-leaving .transition-fade{
+    opacity: 0;
+    transform: translateY(0%);
+}
+
 /* a = todos os links */
 a {
     color: currentColor;
@@ -187,13 +207,3 @@ clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
     animation-direction: alternate;
 }
 
-/*Fade Animation*/
-
-.transition-fade{
-    opacity: 1;
-    transition: 500ms;
-}
-
-html.is-animating .transition-fade {
-    opacity: 0;
-}
