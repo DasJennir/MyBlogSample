@@ -54,3 +54,5 @@ solarButton.onclick = () => {
     localStorage.setItem('isSolar', true);
   }
 };
+
+const swup = new Swup();
