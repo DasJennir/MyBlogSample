@@ -56,3 +56,14 @@ solarButton.onclick = () => {
 };
 
 const swup = new Swup();
+
+//bubble animation
+
+const hamburguer = document.querySelector('.hamburguer');
+const navLinks = document.querySelector('.navbar-nav');
+const links = document.querySelectorAll('.navbar-nav li');
+
+hamburguer.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+
+});
